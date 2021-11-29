@@ -1,0 +1,28 @@
+.section h1 {
+    font-size: 3em;
+}
+
+.float-right {
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.movie-ratings {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #a3a3a3;
+    display: inline-block;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 100%;
+}

@@ -1,0 +1,13 @@
+<div role="main">
+    <div class="intro section">
+        <h1>Only on Netflix</h1>
+        <p>Netflix is the home of amazing original programming that you can’t find anywhere else. Movies, TV shows, specials and more, all tailored specifically to you.</p>
+    </div>
+
+    <div class="section">
+        <h1>Most Popular on Xcentium Flicks</h1>
+        <carousel>
+            <app-flick-item [ngClass]="'carousel-cell'" *ngFor="let flick of flicks" [flick]="flick"></app-flick-item>
+        </carousel>
+    </div>
+</div>
