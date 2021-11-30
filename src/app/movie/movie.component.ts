@@ -9,31 +9,17 @@ import { Flick } from '../Flick';
   styleUrls: ['./movie.component.css']
 })
 export class MovieComponent implements OnInit {
-  /*movie: Flick[] = [];
-
-  constructor(private _router: Router, private flickService: FlickService) {
-    //this.movie = this._router.getCurrentNavigation()?.extras.state;
-    //console.log(this.movie);
-  }
-
-  ngOnInit(): void {
-    //this.flickService.getFlicks().subscribe((flicks) => (this.flicks = flicks));
-    //console.log(this.flick);
-    this.flickService.getFlickDetail(1);
-    this.flickService.getFlickDetail(1).subscribe((movie) => (this.movie = movie));
-  }*/
-
   flicks: Flick[] = [];
+  @Input() flick!: Flick;
   movie: any;
-  error: any;
-
   constructor(
     private route: ActivatedRoute, 
-    private flickService: FlickService
+    private flickService: FlickService,
+    private _router: Router
     ) {}
 
   ngOnInit(): void {
-    this.movieDetail()
+    this.movieDetail();
   }
 
   movieDetail(){
@@ -41,5 +27,7 @@ export class MovieComponent implements OnInit {
     this.flickService.getFlickDetail(movieId).subscribe(
       data => this.movie = data
     )
+    this.flickService.getFlicks().subscribe((flicks) => (this.flicks = flicks));
   }
+
 }

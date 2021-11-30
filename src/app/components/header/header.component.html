@@ -7,23 +7,12 @@
         <form>
             <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
             <div>
-                <ul>
-                    <li class="nfFormSpace field-email">
-                        <div>
-                            <div>
-                                <label>
-                                    <input type="email" name="email" id="id_email" value="" maxlength="50" minlength="5">
-                                    <label for="id_email_hero_fuji" class="placeLabel">Email address</label>
-                                </label>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="our-story-cta-container cta-link-wrapper">
-                    <button type="submit" autocomplete="off" class="btn">
-                        <span id="" class="cta-btn-txt" data-uia="">Get Started</span>
-                        <span id="" class="chevron-right-arrow" data-uia=""></span>
-                    </button>
+                <label for="id_email_" class="placeLabel">Email address
+                    <input type="email" name="email" id="id_email" value="" maxlength="50" minlength="5">
+                </label>
+                <br /><br />
+                <div class="our-story-cta-container cta-link-wrapper" autocomplete="off">
+                    <button type="submit" mat-raised-button color="warn">Get Started</button>
                 </div>
             </div>
         </form>

@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -12,6 +13,7 @@ import { FlicksComponent } from './components/flicks/flicks.component';
 import { FlickItemComponent } from './components/flick-item/flick-item.component';
 import { MovieComponent } from './movie/movie.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   { path: '', component: FlicksComponent },
@@ -34,6 +36,8 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes/*, { enableTracing: true}*/ ),
     IvyCarouselModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,8 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
 /* global styles */
 body {
     background-color: black;
@@ -40,3 +45,5 @@ body {
     -moz-box-shadow: 0 1px 0 rgba(0,0,0,.45);
     box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
